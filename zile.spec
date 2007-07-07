@@ -1,5 +1,5 @@
 %define name    zile
-%define version 2.2.29
+%define version 2.2.37
 %define release %mkrel 1
 %define Summary Zile Is Lossy Emacs
 
@@ -11,7 +11,7 @@ Release:        %release
 License:        BSD
 Group:          Editors
 URL:            http://zile.sourceforge.net/
-Source0:        http://osdn.dl.sourceforge.net/sourceforge/zile/%name-%version.tar.bz2
+Source0:        http://osdn.dl.sourceforge.net/sourceforge/zile/%name-%version.tar.gz
 BuildRoot:      %_tmppath/%name-buildroot
 BuildRequires:  ncurses-devel
 BuildRequires:	texinfo
