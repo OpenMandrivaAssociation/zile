@@ -1,5 +1,5 @@
 %define name    zile
-%define version 2.2.37
+%define version 2.2.38
 %define release %mkrel 1
 %define Summary Zile Is Lossy Emacs
 
@@ -56,7 +56,6 @@ should feel at home with Zile. Zile features
 %configure
 %make
 
-
 %install
 rm -rf $RPM_BUILD_ROOT
 mkdir -p %buildroot/usr/share/info
@@ -68,10 +67,8 @@ mkdir -p %buildroot/usr/share/info
 %preun
 %_remove_install_info %name.info.*
 
-
 %clean
 rm -rf $RPM_BUILD_ROOT
-
 
 %files
 %defattr(0755,root,root,0755)
@@ -81,5 +78,3 @@ rm -rf $RPM_BUILD_ROOT
 %_datadir/%name
 %_mandir/man1/%name.1.*
 %_infodir/%name.info.*
-
-
