@@ -1,5 +1,5 @@
 %define name    zile
-%define version 2.2.41
+%define version 2.2.43
 %define release %mkrel 1
 %define Summary Zile Is Lossy Emacs
 
@@ -62,10 +62,10 @@ mkdir -p %buildroot/usr/share/info
 %makeinstall mandir=%buildroot/%_mandir/
 
 %post
-%_install_info        %name.info.*
+%_install_info        %name.info
 
 %preun
-%_remove_install_info %name.info.*
+%_remove_install_info %name.info
 
 %clean
 rm -rf $RPM_BUILD_ROOT
