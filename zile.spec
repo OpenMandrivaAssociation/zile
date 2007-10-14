@@ -1,5 +1,5 @@
 %define name    zile
-%define version 2.2.43
+%define version 2.2.46
 %define release %mkrel 1
 %define Summary Zile Is Lossy Emacs
 
@@ -8,7 +8,7 @@ Name:           %name
 Epoch:		1
 Version:        %version
 Release:        %release
-License:        BSD
+License:        GPLv2
 Group:          Editors
 URL:            http://zile.sourceforge.net/
 Source0:        http://osdn.dl.sourceforge.net/sourceforge/zile/%name-%version.tar.gz
@@ -53,13 +53,12 @@ should feel at home with Zile. Zile features
 %setup -q
 
 %build
-%configure
+%configure2_5x
 %make
 
 %install
 rm -rf $RPM_BUILD_ROOT
-mkdir -p %buildroot/usr/share/info
-%makeinstall mandir=%buildroot/%_mandir/
+%makeinstall_std
 
 %post
 %_install_info        %name.info
