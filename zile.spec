@@ -1,5 +1,5 @@
 %define name    zile
-%define version 2.2.48
+%define version 2.2.50
 %define release %mkrel 1
 %define Summary Zile Is Lossy Emacs
 
@@ -8,7 +8,7 @@ Name:           %name
 Epoch:		1
 Version:        %version
 Release:        %release
-License:        GPLv2
+License:        GPLv2+
 Group:          Editors
 URL:            http://zile.sourceforge.net/
 Source0:        http://osdn.dl.sourceforge.net/sourceforge/zile/%name-%version.tar.gz
