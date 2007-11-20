@@ -1,5 +1,5 @@
 %define name    zile
-%define version 2.2.50
+%define version 2.2.52
 %define release %mkrel 1
 %define Summary Zile Is Lossy Emacs
 
@@ -46,7 +46,6 @@ should feel at home with Zile. Zile features
       better reading.
     * Auto fill (word wrap). Zile automatically breaks the lines when
       they become too wide (if the Auto Fill Mode is enabled).
-
 
 
 %prep
