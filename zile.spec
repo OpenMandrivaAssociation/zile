@@ -12,6 +12,7 @@ License:        GPLv2+
 Group:          Editors
 URL:            http://zile.sourceforge.net/
 Source0:        http://osdn.dl.sourceforge.net/sourceforge/zile/%name-%version.tar.gz
+BuildRoot:      %_tmppath/%name-buildroot
 BuildRequires:  ncurses-devel
 BuildRequires:	texinfo
 BuildRequires:	tetex-latex
