@@ -1,5 +1,5 @@
 %define name    zile
-%define version 2.2.57
+%define version 2.2.58
 %define release %mkrel 1
 %define Summary Zile Is Lossy Emacs
 
@@ -10,8 +10,8 @@ Version:        %version
 Release:        %release
 License:        GPLv2+
 Group:          Editors
-URL:            http://zile.sourceforge.net/
-Source0:        http://osdn.dl.sourceforge.net/sourceforge/zile/%name-%version.tar.gz
+URL:            http://www.gnu.org/software/zile/
+Source0:	http://ftp.gnu.org/gnu/zile/%name-%version.tar.gz
 BuildRoot:      %_tmppath/%name-buildroot
 BuildRequires:  ncurses-devel
 BuildRequires:	texinfo
