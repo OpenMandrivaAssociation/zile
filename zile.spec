@@ -1,5 +1,5 @@
 %define name    zile
-%define version 2.3.0
+%define version 2.3.4
 %define release %mkrel 1
 %define Summary Zile Is Lossy Emacs
 
@@ -17,6 +17,7 @@ BuildRequires:  ncurses-devel
 BuildRequires:	texinfo
 BuildRequires:	tetex-latex
 BuildRequires:	termcap-devel
+BuildRequires:	help2man
 
 
 %description
@@ -75,4 +76,3 @@ rm -rf $RPM_BUILD_ROOT
 %doc AUTHORS COPYING INSTALL NEWS README
 %_datadir/%name
 %_mandir/man1/%name.1.*
-%_infodir/%name.info.*
