@@ -1,5 +1,5 @@
 %define name    zile
-%define version 2.3.13
+%define version 2.3.15
 %define release %mkrel 1
 %define Summary Zile Is Lossy Emacs
 
@@ -8,7 +8,7 @@ Name:           %name
 Epoch:		1
 Version:        %version
 Release:        %release
-License:        GPLv2+
+License:        GPLv3+
 Group:          Editors
 URL:            http://www.gnu.org/software/zile/
 Source0:	http://ftp.gnu.org/gnu/zile/%name-%version.tar.gz
