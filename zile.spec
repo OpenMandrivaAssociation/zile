@@ -1,5 +1,5 @@
 %define name    zile
-%define version 2.3.19
+%define version 2.3.21
 %define release %mkrel 1
 %define Summary Zile Is Lossy Emacs
 
