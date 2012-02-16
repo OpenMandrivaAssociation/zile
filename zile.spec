@@ -1,6 +1,6 @@
 %define name    zile
-%define version 2.3.22
-%define release %mkrel 1
+%define version 2.4.5
+%define release 1
 %define Summary Zile Is Lossy Emacs
 
 Summary:        %Summary
@@ -12,7 +12,6 @@ License:        GPLv3+
 Group:          Editors
 URL:            http://www.gnu.org/software/zile/
 Source0:	http://ftp.gnu.org/gnu/zile/%name-%version.tar.gz
-BuildRoot:      %_tmppath/%name-buildroot
 BuildRequires:  ncurses-devel
 BuildRequires:	texinfo
 BuildRequires:	tetex-latex
@@ -57,7 +56,6 @@ should feel at home with Zile. Zile features
 %make
 
 %install
-rm -rf $RPM_BUILD_ROOT
 %makeinstall_std
 
 %post
@@ -65,9 +63,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %preun
 %_remove_install_info %name.info
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(0755,root,root,0755)
