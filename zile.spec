@@ -12,6 +12,7 @@ License:        GPLv3+
 Group:          Editors
 URL:            http://www.gnu.org/software/zile/
 Source0:	http://ftp.gnu.org/gnu/zile/%name-%version.tar.gz
+Patch0:         zile-2.4.6-mdv-ncursesw.patch
 BuildRequires:  ncursesw-devel
 BuildRequires:	texinfo
 BuildRequires:	tetex-latex
@@ -51,6 +52,7 @@ should feel at home with Zile. Zile features
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 %configure2_5x
