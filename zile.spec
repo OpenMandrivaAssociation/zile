@@ -1,5 +1,5 @@
 %define name    zile
-%define version 2.4.5
+%define version 2.4.6
 %define release 1
 %define Summary Zile Is Lossy Emacs
 
@@ -12,11 +12,12 @@ License:        GPLv3+
 Group:          Editors
 URL:            http://www.gnu.org/software/zile/
 Source0:	http://ftp.gnu.org/gnu/zile/%name-%version.tar.gz
-BuildRequires:  ncurses-devel
+BuildRequires:  ncursesw-devel
 BuildRequires:	texinfo
 BuildRequires:	tetex-latex
 BuildRequires:	termcap-devel
 BuildRequires:	help2man
+BuildRequires:	libgc-devel
 
 
 %description
@@ -68,6 +69,6 @@ should feel at home with Zile. Zile features
 %defattr(0755,root,root,0755)
 %_bindir/*
 %defattr(0644,root,root,0755)
-%doc AUTHORS COPYING INSTALL NEWS README
-%_datadir/%name
+%doc AUTHORS COPYING NEWS README
+#%_datadir/%name
 %_mandir/man1/%name.1.*
