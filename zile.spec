@@ -1,5 +1,5 @@
 %define name    zile
-%define version 2.4.7
+%define version 2.4.8
 %define release 1
 %define Summary Zile Is Lossy Emacs
 
@@ -18,7 +18,7 @@ BuildRequires:	texinfo
 BuildRequires:	tetex-latex
 BuildRequires:	termcap-devel
 BuildRequires:	help2man
-BuildRequires:	libgc-devel
+BuildRequires:	pkgconfig(bdw-gc)
 
 
 %description
