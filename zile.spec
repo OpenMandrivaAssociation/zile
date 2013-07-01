@@ -1,4 +1,4 @@
-Summary:	Zile Is Lossy Emacs
+Summary:	Is Lossy Emacs
 Name:		zile
 Epoch:		1
 Version:	2.4.9
