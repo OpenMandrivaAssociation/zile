@@ -1,13 +1,12 @@
 Summary:	Lossy Emacs
 Name:		zile
 Epoch:		1
-Version:	2.4.9
-Release:	3
+Version:	2.4.13
+Release:	1
 License:	GPLv3+
 Group:		Editors
 URL:		http://www.gnu.org/software/zile/
 Source0:	http://ftp.gnu.org/gnu/zile/%{name}-%version.tar.gz
-Source1:	http://ftp.gnu.org/gnu/zile/%{name}-%version.tar.gz.sig
 Patch0:		zile-2.4.6-mdv-ncursesw.patch
 
 BuildRequires:	help2man
@@ -51,14 +50,14 @@ should feel at home with Zile. Zile features
 %apply_patches
 
 %build
-%configure2_5x
+%configure
 %make
 
 %install
 %makeinstall_std
 
 %files
-%doc AUTHORS COPYING NEWS README
+%doc AUTHORS NEWS README
 %{_bindir}/*
 %{_mandir}/man1/%{name}.1*
 
