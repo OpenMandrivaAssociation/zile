@@ -47,7 +47,7 @@ should feel at home with Zile. Zile features
 
 %prep
 %setup -q
-%apply_patches
+%autopatch -p1
 
 %build
 %configure
