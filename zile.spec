@@ -1,20 +1,20 @@
 Summary:	Lossy Emacs
 Name:		zile
 Epoch:		1
-Version:	2.4.13
+Version:	2.6.2
 Release:	1
 License:	GPLv3+
 Group:		Editors
 URL:		http://www.gnu.org/software/zile/
 Source0:	http://ftp.gnu.org/gnu/zile/%{name}-%version.tar.gz
-Patch0:		zile-2.4.6-mdv-ncursesw.patch
 
 BuildRequires:	help2man
 BuildRequires:	texinfo
 BuildRequires:	tetex-latex
-BuildRequires:	termcap-devel
 BuildRequires:	pkgconfig(bdw-gc)
 BuildRequires:	pkgconfig(ncursesw)
+BuildRequires:	pkgconfig(glib-2.0)
+BuildRequires:	pkgconfig(gee-0.8)
 
 %description
 Zile is another Emacs-clone. Zile is a customizable, self-documenting
@@ -46,18 +46,16 @@ should feel at home with Zile. Zile features
 
 
 %prep
-%setup -q
-%autopatch -p1
+%autosetup -p1
+%configure
 
 %build
-%configure
-%make
+%make_build
 
 %install
-%makeinstall_std
+%make_install
 
 %files
-%doc AUTHORS NEWS README
 %{_bindir}/*
 %{_mandir}/man1/%{name}.1*
-
+%doc %{_docdir}/zile
