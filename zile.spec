@@ -5,7 +5,7 @@ Version:	2.6.2
 Release:	1
 License:	GPLv3+
 Group:		Editors
-URL:		http://www.gnu.org/software/zile/
+URL:		https://www.gnu.org/software/zile/
 Source0:	http://ftp.gnu.org/gnu/zile/%{name}-%version.tar.gz
 
 BuildRequires:	help2man
