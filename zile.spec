@@ -1,7 +1,7 @@
 Summary:	Lossy Emacs
 Name:		zile
 Epoch:		1
-Version:	2.6.2
+Version:	2.6.4
 Release:	1
 License:	GPLv3+
 Group:		Editors
