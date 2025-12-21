@@ -8,6 +8,11 @@ Group:		Editors
 URL:		https://www.gnu.org/software/zile/
 Source0:	http://ftp.gnu.org/gnu/zile/%{name}-%version.tar.gz
 
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	help2man
 BuildRequires:	texinfo
 BuildRequires:	tetex-latex
